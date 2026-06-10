@@ -1,0 +1,101 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "brands": "Our Brands",
+    "catalogs": "Catalogs",
+    "client": "Become a Client",
+    "careers": "Work with Us",
+    "contact": "Contact"
+  },
+  "ageGate": {
+    "title": "Age Verification",
+    "text": "To ensure we only communicate with adult tobacco consumers, please confirm you are 21 years of age or older.",
+    "yes": "Yes, I am 21 or older",
+    "no": "No, I am under 21"
+  },
+  "footer": {
+    "aboutText": "Distributing quality, trust, and credibility in the tobacco and cigar market of Rio de Janeiro since 2006.",
+    "quickLinks": "Quick Links",
+    "contact": "Contact",
+    "address": "Estrada do Galeão, 2730 - Ilha do Governador, Rio de Janeiro - RJ, 21931-382",
+    "phone": "+55 (21) 96956-0379",
+    "email": "mufernandes2811@gmail.com",
+    "rights": "© 2006-2026 LM Rocha Distribuidora. All rights reserved."
+  },
+  "common": {
+    "loading": "Loading...",
+    "send": "Submit",
+    "submitting": "Submitting...",
+    "success": "Message sent successfully!",
+    "error": "An error occurred. Please try again.",
+    "readMore": "Learn More",
+    "whatsappText": "Chat with us on WhatsApp"
+  },
+  "home": {
+    "heroBadge": "SINCE 2006",
+    "heroTitle": "Cigar & Tobacco Specialists",
+    "heroSubtitle": "Trust, satisfaction, security, and credibility are our distinctions. Bring the best products to your clients.",
+    "ctaButton": "I want to be a client",
+    "contactTitle": "Contact Us",
+    "contactSubtitle": "Or get in touch via WhatsApp:",
+    "featuresTitle": "Why Choose LM Rocha?",
+    "feature1Title": "Market Tradition",
+    "feature1Desc": "Active for two decades as a leading distributor in the state of Rio de Janeiro.",
+    "feature2Title": "Premium Catalog",
+    "feature2Desc": "Selected brands and high-quality domestic and imported products.",
+    "feature3Title": "Agile Delivery",
+    "feature3Desc": "Fast proprietary logistics and specialized support for your business."
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "Discover the story of dedication and success of LM Rocha Distribuidora",
+    "historyTitle": "Our History",
+    "historyText1": "Founded in 2006 in Rio de Janeiro, LM Rocha Distribuidora was born with the commitment to supply the market with the finest tobacco and cigar products. Over two decades, we have consolidated our presence through relationships of extreme trust, safety, and credibility with our clients.",
+    "historyText2": "We always strive to innovate our portfolio, offering from the most traditional brands to the main national and imported novelties for high-quality tobacconists, convenience stores, and emporiums.",
+    "values": {
+      "missionTitle": "Mission",
+      "missionText": "Distribute premium tobacco products with excellence, providing value to our commercial partners through agility, integrity, and a diverse portfolio.",
+      "visionTitle": "Vision",
+      "visionText": "To be recognized as the most trusted tobacco and cigar distributor in Southeastern Brazil, continuously expanding our presence and service quality.",
+      "valuesTitle": "Values",
+      "valuesText": "Commitment to the client, non-negotiable ethics, superior quality, fast logistics, and responsibility in commercializing products for adults."
+    }
+  },
+  "brands": {
+    "title": "Our Brands",
+    "subtitle": "We work with the best and most respected brands in the tobacco sector",
+    "tabs": {
+      "features": "Features",
+      "products": "Main Products"
+    }
+  },
+  "catalogs": {
+    "title": "Catalogs",
+    "subtitle": "Be the owner of your own business, get to know our brands.",
+    "accordionTitle": "Check out our 2026 product catalog",
+    "categories": "Categories",
+    "all": "All",
+    "noProducts": "No products found in this category.",
+    "details": "Specifications",
+    "interested": "Interested in this product?",
+    "interestCTA": "Request Quote"
+  },
+  "forms": {
+    "name": "Your Name",
+    "email": "Email",
+    "phone": "Phone / Mobile",
+    "company": "Company Name / Trade Name",
+    "cnpj": "CNPJ (Tax ID)",
+    "cityState": "City / State",
+    "position": "Job Position of Interest",
+    "subject": "Subject",
+    "message": "Message / Question",
+    "requiredError": "This field is required",
+    "emailError": "Invalid email address",
+    "phoneError": "Invalid phone number (e.g. +55 21 99999-9999)",
+    "cnpjError": "Invalid CNPJ (14 digits)",
+    "successMessage": "Form submitted successfully! Our team will contact you shortly.",
+    "whatsappRedirect": "Redirecting to WhatsApp..."
+  }
+}

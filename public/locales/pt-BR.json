@@ -1,0 +1,101 @@
+{
+  "nav": {
+    "home": "Início",
+    "about": "Quem Somos",
+    "brands": "Nossas Marcas",
+    "catalogs": "Catálogos",
+    "client": "Seja Nosso Cliente",
+    "careers": "Trabalhe Conosco",
+    "contact": "Contato"
+  },
+  "ageGate": {
+    "title": "Verificação de Idade",
+    "text": "Para garantir que estamos nos comunicando apenas com consumidores de tabaco adultos, confirme se você tem 21 anos ou mais.",
+    "yes": "Sim, tenho 21 anos ou mais",
+    "no": "Não, tenho menos de 21 anos"
+  },
+  "footer": {
+    "aboutText": "Desde 2006 distribuindo qualidade, confiança e credibilidade no mercado de tabacos e charutos do Rio de Janeiro.",
+    "quickLinks": "Links Rápidos",
+    "contact": "Contato",
+    "address": "Estrada do Galeão, 2730 - Ilha do Governador, Rio de Janeiro - RJ, 21931-382",
+    "phone": "(21) 96956-0379",
+    "email": "mufernandes2811@gmail.com",
+    "rights": "© 2006-2026 LM Rocha Distribuidora. Todos os direitos reservados."
+  },
+  "common": {
+    "loading": "Carregando...",
+    "send": "Enviar",
+    "submitting": "Enviando...",
+    "success": "Mensagem enviada com sucesso!",
+    "error": "Ocorreu um erro. Tente novamente.",
+    "readMore": "Saiba Mais",
+    "whatsappText": "Fale Conosco no WhatsApp"
+  },
+  "home": {
+    "heroBadge": "DESDE 2006",
+    "heroTitle": "Especialistas Em Charutos E Fumo",
+    "heroSubtitle": "Confiança, satisfação, segurança e credibilidade são nossos diferenciais. Leve os melhores produtos para seus clientes.",
+    "ctaButton": "Quero ser cliente",
+    "contactTitle": "Fale Conosco",
+    "contactSubtitle": "Ou entre em contato via WhatsApp:",
+    "featuresTitle": "Por Que Escolher a LM Rocha?",
+    "feature1Title": "Tradição no Mercado",
+    "feature1Desc": "Há duas décadas atuando como distribuidora líder no estado do Rio de Janeiro.",
+    "feature2Title": "Catálogo Premium",
+    "feature2Desc": "Marcas selecionadas e produtos nacionais e importados de altíssima qualidade.",
+    "feature3Title": "Atendimento Ágil",
+    "feature3Desc": "Logística própria rápida e suporte especializado para o seu negócio."
+  },
+  "about": {
+    "title": "Quem Somos",
+    "subtitle": "Conheça a história de dedicação e sucesso da LM Rocha Distribuidora",
+    "historyTitle": "Nossa História",
+    "historyText1": "Fundada em 2006 no Rio de Janeiro, a LM Rocha Distribuidora nasceu com o compromisso de abastecer o mercado com os melhores produtos de tabaco e charutos. Ao longo de duas décadas, consolidamos nossa presença através de relações de extrema confiança, segurança e credibilidade com nossos clientes.",
+    "historyText2": "Buscamos sempre inovar no portfólio, oferecendo desde as marcas mais tradicionais até as principais novidades nacionais e importadas para tabacarias, conveniências e empórios de alta qualidade.",
+    "values": {
+      "missionTitle": "Missão",
+      "missionText": "Distribuir com excelência produtos premium de tabaco, proporcionando valor para nossos parceiros comerciais através de agilidade, integridade e portfólio diversificado.",
+      "visionTitle": "Visão",
+      "visionText": "Ser reconhecida como a distribuidora de tabaco e charutos mais confiável do Sudeste brasileiro, expandindo continuamente nossa presença e qualidade de serviço.",
+      "valuesTitle": "Valores",
+      "valuesText": "Compromisso com o cliente, ética inegociável, qualidade superior, rapidez logística e responsabilidade no comércio de produtos para adultos."
+    }
+  },
+  "brands": {
+    "title": "Nossas Marcas",
+    "subtitle": "Trabalhamos com as melhores e mais conceituadas marcas do setor tabagista",
+    "tabs": {
+      "features": "Características",
+      "products": "Produtos Principais"
+    }
+  },
+  "catalogs": {
+    "title": "Catálogos",
+    "subtitle": "Seja dono do seu próprio negócio, conheça nossas marcas.",
+    "accordionTitle": "Confira nosso catálogo de produtos 2026",
+    "categories": "Categorias",
+    "all": "Todos",
+    "noProducts": "Nenhum produto encontrado nesta categoria.",
+    "details": "Especificações",
+    "interested": "Interessado neste produto?",
+    "interestCTA": "Solicitar Orçamento"
+  },
+  "forms": {
+    "name": "Seu Nome",
+    "email": "E-mail",
+    "phone": "Telefone / Celular",
+    "company": "Razão Social / Nome Fantasia",
+    "cnpj": "CNPJ",
+    "cityState": "Cidade / Estado",
+    "position": "Cargo de Interesse",
+    "subject": "Assunto",
+    "message": "Mensagem / Dúvida",
+    "requiredError": "Este campo é obrigatório",
+    "emailError": "E-mail inválido",
+    "phoneError": "Telefone inválido (ex: 21999999999)",
+    "cnpjError": "CNPJ inválido (14 dígitos)",
+    "successMessage": "Formulário enviado com sucesso! Nosso time entrará em contato em breve.",
+    "whatsappRedirect": "Redirecionando para o WhatsApp..."
+  }
+}

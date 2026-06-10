@@ -1,0 +1,152 @@
+[
+  {
+    "id": "1",
+    "name": "Charuto Cohiba Robusto",
+    "category": "charutos",
+    "brand": "Cohiba",
+    "description": "Um dos charutos mais prestigiados do mundo, com fortaleza média a forte e sabores complexos de madeira e especiarias.",
+    "price": 350.00,
+    "image": "/images/products/cohiba-robusto.jpg",
+    "features": {
+      "origem": "Cuba",
+      "bitola": "124mm x 19.8mm (Anel 50)",
+      "tempo_degustacao": "45-60 min",
+      "fortaleza": "Forte"
+    }
+  },
+  {
+    "id": "2",
+    "name": "Charuto Montecristo No. 4",
+    "category": "charutos",
+    "brand": "Montecristo",
+    "description": "O charuto cubano mais vendido do planeta. Sabor clássico terroso com notas de cacau e café torrado.",
+    "price": 140.00,
+    "image": "/images/products/montecristo-no4.jpg",
+    "features": {
+      "origem": "Cuba",
+      "bitola": "129mm x 16.7mm (Anel 42)",
+      "tempo_degustacao": "30-40 min",
+      "fortaleza": "Média a Forte"
+    }
+  },
+  {
+    "id": "3",
+    "name": "Fumo Vibe Tobacco Virginia Blend",
+    "category": "fumo",
+    "brand": "Vibe Tobacco",
+    "description": "Blend de tabacos Virginia selecionados, de sabor suave e aroma adocicado natural. Ideal para enrolar.",
+    "price": 25.00,
+    "image": "/images/products/fumo-vibe-virginia.jpg",
+    "features": {
+      "tipo": "Virginia Blend",
+      "peso": "25g",
+      "intensidade": "Suave",
+      "origem": "Brasil"
+    }
+  },
+  {
+    "id": "4",
+    "name": "Fumo Hi Tobacco Golden Virginia",
+    "category": "fumo",
+    "brand": "Hi Tobacco",
+    "description": "Tabaco 100% livre de aditivos químicos, composto puramente por folhas claras de Virginia cuidadosamente desfiadas.",
+    "price": 32.00,
+    "image": "/images/products/hi-tobacco-golden.jpg",
+    "features": {
+      "tipo": "Virginia Gold",
+      "peso": "35g",
+      "intensidade": "Média-Suave",
+      "origem": "Brasil"
+    }
+  },
+  {
+    "id": "5",
+    "name": "Seda Smoking Deluxe King Size",
+    "category": "papel",
+    "brand": "Smoking",
+    "description": "Papel ultrafino de combustão lenta. Produzido com goma arábica 100% natural, sem corantes.",
+    "price": 7.50,
+    "image": "/images/products/smoking-deluxe.jpg",
+    "features": {
+      "tamanho": "110mm x 44mm (King Size)",
+      "folhas": "33 folhas por livreto",
+      "gramatura": "13 g/m²",
+      "material": "Arroz"
+    }
+  },
+  {
+    "id": "6",
+    "name": "Seda OCB Organic Hemp Single Wide",
+    "category": "papel",
+    "brand": "OCB",
+    "description": "Papel ecológico produzido a partir de cânhamo orgânico certificado, não branqueado.",
+    "price": 6.00,
+    "image": "/images/products/ocb-organic.jpg",
+    "features": {
+      "tamanho": "69mm x 36mm",
+      "folhas": "50 folhas por livreto",
+      "gramatura": "12 g/m²",
+      "material": "Cânhamo Orgânico"
+    }
+  },
+  {
+    "id": "7",
+    "name": "Filtros Gizeh Slim Charcoal 6mm",
+    "category": "filtros",
+    "brand": "Gizeh",
+    "description": "Filtros de acetato com carvão ativado que auxiliam na redução de impurezas sem alterar o sabor.",
+    "price": 12.00,
+    "image": "/images/products/gizeh-charcoal.jpg",
+    "features": {
+      "diametro": "6mm (Slim)",
+      "quantidade": "120 filtros por pacote",
+      "material": "Acetato + Carvão Ativado",
+      "fechamento": "Saco com zip de proteção"
+    }
+  },
+  {
+    "id": "8",
+    "name": "Filtros OCB Slim 6mm Biodegradáveis",
+    "category": "filtros",
+    "brand": "OCB",
+    "description": "Filtros biodegradáveis feitos de celulose pura não branqueada. Amigos do meio ambiente.",
+    "price": 10.00,
+    "image": "/images/products/ocb-filters-bio.jpg",
+    "features": {
+      "diametro": "6mm (Slim)",
+      "quantidade": "150 filtros por pacote",
+      "material": "Celulose não branqueada",
+      "caracteristica": "100% Biodegradável"
+    }
+  },
+  {
+    "id": "9",
+    "name": "Isqueiro Clipper Metal Gold recarregável",
+    "category": "acessorios",
+    "brand": "Clipper",
+    "description": "Edição premium Clipper em metal dourado com ajuste de chama. Acompanha estojo metálico exclusivo.",
+    "price": 85.00,
+    "image": "/images/products/clipper-metal-gold.jpg",
+    "features": {
+      "material": "Metal",
+      "cor": "Dourado / Ouro",
+      "recarregavel": "Sim (Gás Butano)",
+      "pedra_substituivel": "Sim"
+    }
+  },
+  {
+    "id": "10",
+    "name": "Cortador de Charutos Vertigo Double Blade",
+    "category": "acessorios",
+    "brand": "Vertigo",
+    "description": "Cortador de guilhotina dupla com lâminas de aço inoxidável cirúrgico autolimpantes. Corte limpo e preciso.",
+    "price": 60.00,
+    "image": "/images/products/vertigo-cutter.jpg",
+    "features": {
+      "material": "Plástico ABS + Aço Inoxidável",
+      "corte_maximo": "Anel 54",
+      "mecanismo": "Dupla Lâmina",
+      "garantia": "Vitalícia pelo fabricante"
+    }
+  }
+]
