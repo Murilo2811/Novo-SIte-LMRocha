@@ -25,7 +25,7 @@ export const authOptions: NextAuthOptions = {
         .filter(Boolean)
 
       // Por padrão, se não configurado no .env, permite o e-mail padrão do usuário
-      const defaultAdmin = 'mufernandes2811@gmail.com'
+      const defaultAdmin = 'contato@lmrocha.com.br'
       if (email.toLowerCase() === defaultAdmin) {
         return true
       }

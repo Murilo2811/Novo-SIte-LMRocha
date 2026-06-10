@@ -11,7 +11,7 @@ interface EmailOptions {
  * Caso as variáveis de ambiente SMTP não estejam configuradas, simula o envio no console.
  */
 export async function sendEmail({ subject, text, html }: EmailOptions): Promise<boolean> {
-  const targetEmail = process.env.CONTACT_EMAIL || 'mufernandes2811@gmail.com'
+  const targetEmail = process.env.CONTACT_EMAIL || 'contato@lmrocha.com.br'
 
   const smtpHost = process.env.SMTP_HOST
   const smtpPort = parseInt(process.env.SMTP_PORT || '587')
