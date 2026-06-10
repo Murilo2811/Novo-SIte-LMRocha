@@ -38,7 +38,8 @@ export const Navbar: React.FC = () => {
       name: t('nav.about'),
       path: '/quem-somos',
       submenu: [
-        { name: t('nav.brands'), path: '/nossas-marcas' }
+        { name: t('nav.brands'), path: '/nossas-marcas' },
+        { name: t('nav.partners'), path: '/nossos-parceiros' }
       ]
     },
     { name: t('nav.catalogs'), path: '/catalogos' },
