@@ -153,15 +153,17 @@ export const Navbar: React.FC = () => {
           z-index: 1000;
           display: flex;
           align-items: center;
-          background: transparent;
-          border-bottom: 1px solid transparent;
+          background: rgba(15, 13, 10, 0.82);
+          border-bottom: 1px solid rgba(255, 204, 102, 0.1);
+          backdrop-filter: blur(10px);
+          -webkit-backdrop-filter: blur(10px);
           transition: all var(--transition-smooth);
         }
 
         .navbar.scrolled {
           height: 70px;
-          background: rgba(18, 18, 17, 0.9);
-          border-bottom: 1px solid rgba(255, 204, 102, 0.15);
+          background: rgba(15, 13, 10, 0.96);
+          border-bottom: 1px solid rgba(255, 204, 102, 0.2);
         }
 
         .navbar-container {
