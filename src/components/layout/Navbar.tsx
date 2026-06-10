@@ -227,19 +227,34 @@ export const Navbar: React.FC = () => {
         /* Dropdown Submenu */
         .submenu-dropdown {
           position: absolute;
-          top: 100%;
+          top: calc(100% + 8px);
           left: 50%;
-          transform: translateX(-50%) translateY(10px);
-          background: rgba(18, 18, 17, 0.95);
-          border: 1px solid rgba(255, 204, 102, 0.2);
-          border-radius: var(--border-radius-sm);
-          padding: 12px 0;
-          min-width: 180px;
+          transform: translateX(-50%) translateY(6px);
+          background: #1a1917;
+          border: 1px solid rgba(255, 204, 102, 0.35);
+          border-radius: 10px;
+          padding: 8px 0;
+          min-width: 200px;
           list-style: none;
-          box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+          box-shadow: 0 16px 40px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(255,255,255,0.04);
           opacity: 0;
           visibility: hidden;
-          transition: all var(--transition-fast);
+          transition: opacity 0.18s ease, transform 0.18s ease, visibility 0.18s;
+        }
+
+        /* small arrow pointer */
+        .submenu-dropdown::before {
+          content: '';
+          position: absolute;
+          top: -6px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 10px;
+          height: 10px;
+          background: #1a1917;
+          border-left: 1px solid rgba(255, 204, 102, 0.35);
+          border-top: 1px solid rgba(255, 204, 102, 0.35);
+          rotate: 45deg;
         }
 
         .nav-item:hover .submenu-dropdown {
@@ -249,17 +264,38 @@ export const Navbar: React.FC = () => {
         }
 
         .submenu-link {
-          display: block;
-          padding: 8px 20px;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          padding: 11px 20px;
           font-size: 0.9rem;
-          font-weight: 500;
-          color: #ffffff;
+          font-weight: 600;
+          color: #e8e4dc !important;
           white-space: nowrap;
+          text-decoration: none;
+          transition: background 0.15s ease, color 0.15s ease;
+          letter-spacing: 0.02em;
         }
 
-        .submenu-link:hover, .submenu-link.active {
+        .submenu-link::before {
+          content: '';
+          width: 4px;
+          height: 4px;
+          border-radius: 50%;
+          background: rgba(255, 204, 102, 0.5);
+          flex-shrink: 0;
+          transition: background 0.15s ease;
+        }
+
+        .submenu-link:hover,
+        .submenu-link.active {
           background: rgba(255, 204, 102, 0.1);
-          color: var(--primary);
+          color: #ffcc66 !important;
+        }
+
+        .submenu-link:hover::before,
+        .submenu-link.active::before {
+          background: #ffcc66;
         }
 
         /* Controls */
