@@ -314,3 +314,32 @@ h1, h2, h3, h4, h5, h6 {
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
+/* ── Navbar dropdown — garante legibilidade independente de herança ── */
+.submenu-dropdown {
+  background: #1c1a17 !important;
+  border: 1px solid rgba(255, 204, 102, 0.35) !important;
+}
+
+.submenu-dropdown a,
+.submenu-dropdown .submenu-link {
+  color: #f0ece4 !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  padding: 11px 20px !important;
+  font-size: 0.9rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.02em !important;
+  white-space: nowrap !important;
+  text-decoration: none !important;
+  transition: background 0.15s ease, color 0.15s ease !important;
+}
+
+.submenu-dropdown a:hover,
+.submenu-dropdown .submenu-link:hover,
+.submenu-dropdown a.active,
+.submenu-dropdown .submenu-link.active {
+  color: #ffcc66 !important;
+  background: rgba(255, 204, 102, 0.1) !important;
+}
