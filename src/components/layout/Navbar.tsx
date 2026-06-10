@@ -71,10 +71,14 @@ export const Navbar: React.FC = () => {
                   <Link href={item.path} className={`nav-link ${isActive(item.path) ? 'active' : ''}`}>
                     {item.name} <span className="chevron">▼</span>
                   </Link>
-                  <ul className="submenu-dropdown">
+                  <ul className="submenu-dropdown" style={{ background: '#1a1917', listStyle: 'none' }}>
                     {item.submenu.map((sub, sIdx) => (
                       <li key={sIdx}>
-                        <Link href={sub.path} className={`submenu-link ${isActive(sub.path) ? 'active' : ''}`}>
+                        <Link
+                          href={sub.path}
+                          className={`submenu-link ${isActive(sub.path) ? 'active' : ''}`}
+                          style={{ color: isActive(sub.path) ? '#ffcc66' : '#e8e4dc' }}
+                        >
                           {sub.name}
                         </Link>
                       </li>
