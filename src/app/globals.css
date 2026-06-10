@@ -315,7 +315,24 @@ h1, h2, h3, h4, h5, h6 {
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* ── Navbar dropdown — garante legibilidade independente de herança ── */
+/* ── Navbar — garante legibilidade em todos os links ── */
+
+/* Links principais do menu */
+.nav-link {
+  color: #ffffff !important;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #ffcc66 !important;
+}
+
+/* Botão Contato no navbar */
+.btn-contact-nav {
+  color: #0a0000 !important;
+}
+
+/* Dropdown */
 .submenu-dropdown {
   background: #1c1a17 !important;
   border: 1px solid rgba(255, 204, 102, 0.35) !important;
