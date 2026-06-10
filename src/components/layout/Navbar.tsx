@@ -153,17 +153,16 @@ export const Navbar: React.FC = () => {
           z-index: 1000;
           display: flex;
           align-items: center;
-          background: rgba(15, 13, 10, 0.82);
-          border-bottom: 1px solid rgba(255, 204, 102, 0.1);
-          backdrop-filter: blur(10px);
-          -webkit-backdrop-filter: blur(10px);
+          background: #ffffff;
+          border-bottom: 1px solid #e5e0d8;
           transition: all var(--transition-smooth);
         }
 
         .navbar.scrolled {
           height: 70px;
-          background: rgba(15, 13, 10, 0.96);
-          border-bottom: 1px solid rgba(255, 204, 102, 0.2);
+          background: #ffffff;
+          border-bottom: 1px solid #d4cfc7;
+          box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
         }
 
         .navbar-container {
@@ -209,7 +208,7 @@ export const Navbar: React.FC = () => {
         .nav-link {
           font-size: 0.95rem;
           font-weight: 600;
-          color: #ffffff;
+          color: #3a3530;
           padding: 10px 0;
           display: inline-flex;
           align-items: center;
@@ -218,7 +217,7 @@ export const Navbar: React.FC = () => {
         }
 
         .nav-link:hover, .nav-link.active {
-          color: var(--primary);
+          color: var(--primary-dark);
         }
 
         .chevron {
@@ -359,7 +358,7 @@ export const Navbar: React.FC = () => {
         .hamburger span {
           width: 100%;
           height: 2px;
-          background: #ffffff;
+          background: #3a3530;
           transition: all var(--transition-fast);
         }
 
