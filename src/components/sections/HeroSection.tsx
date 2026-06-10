@@ -43,7 +43,7 @@ export const HeroSection: React.FC = () => {
           display: flex;
           align-items: center;
           overflow: hidden;
-          background-image: url('https://images.unsplash.com/photo-1543087903-1ac2ec7aa8c5?q=80&w=1470&auto=format&fit=crop');
+          background-image: url('/images/site/WhatsApp-Image-2020-07-14-at-23.09.02-1.jpeg');
           background-size: cover;
           background-position: center;
           padding: 80px 0;

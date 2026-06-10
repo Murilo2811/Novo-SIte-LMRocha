@@ -65,7 +65,7 @@ export default function SejaClientePage() {
 
         .client-hero {
           position: relative;
-          background-image: url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=1470&auto=format&fit=crop'); /* Loja/conveniência */
+          background-image: url('/images/site/WhatsApp-Image-2020-07-14-at-23.09.03-2.jpeg'); /* Foto real do acervo */
           background-size: cover;
           background-position: center;
           height: 300px;

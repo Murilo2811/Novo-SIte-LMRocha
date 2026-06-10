@@ -53,7 +53,7 @@ export default function TrabalheConoscoPage() {
 
         .careers-hero {
           position: relative;
-          background-image: url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1478&auto=format&fit=crop'); /* Equipe / Negócios */
+          background-image: url('/images/site/WhatsApp-Image-2020-07-22-at-10.14.53-1.jpeg'); /* Foto real do acervo */
           background-size: cover;
           background-position: center;
           height: 300px;

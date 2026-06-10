@@ -6,92 +6,148 @@ import { useTranslation } from '../../../hooks/useTranslation'
 interface Brand {
   id: string
   name: string
-  logoText: string
+  logo: string
+  category: string
   tagline: string
-  features: string[]
-  products: string[]
 }
 
 export default function NossasMarcasPage() {
   const { t } = useTranslation()
-  const [activeBrandId, setActiveBrandId] = useState('1')
-  const [activeTab, setActiveTab] = useState<'features' | 'products'>('features')
+  const [activeFilter, setActiveFilter] = useState('all')
 
   const brands: Brand[] = [
     {
-      id: '1',
-      name: 'Cohiba',
-      logoText: 'COHIBA',
-      tagline: 'A marca cubana mais famosa do planeta.',
-      features: [
-        'Produzido em Cuba na lendária fábrica El Laguito',
-        'Tabaco submetido a fermentação tripla para máxima sofisticação',
-        'Considerada a marca de maior prestígio no mundo dos Habanos',
-        'Lâminas internas selecionadas nas melhores plantações de Vuelta Abajo'
-      ],
-      products: [
-        'Cohiba Robusto (Bitola Robusto)',
-        'Cohiba Siglo II (Bitola Corona)',
-        'Cohiba Lanceros (Bitola Gran Panetela)',
-        'Cohiba Behike 52 (Bitola Laguito No. 4)'
-      ]
+      id: 'gran-honduras',
+      name: 'Gran Honduras',
+      logo: '/images/site/Logo-Gran-Honduras-10-09-2018-269x300.png',
+      category: 'charutos',
+      tagline: 'Charutos premium hondurenhos de alta qualidade'
     },
     {
-      id: '2',
-      name: 'Montecristo',
-      logoText: 'MONTECRISTO',
-      tagline: 'O padrão global de sabor e consistência.',
-      features: [
-        'Fundada em 1935, inspirada no livro O Conde de Monte Cristo',
-        'Sabor inconfundível terroso de fortaleza média a forte',
-        'A marca de charutos premium cubanos mais vendida do mundo',
-        'Produção artesanal Totalmente a Mano com tripas longas'
-      ],
-      products: [
-        'Montecristo No. 4 (Bitola Mareva)',
-        'Montecristo No. 2 (Bitola Pirámide)',
-        'Montecristo Joyitas (Bitola Laguito No. 3)',
-        'Montecristo Edmundo (Bitola Robusto Extra)'
-      ]
+      id: 'alonso-menendez',
+      name: 'Alonso Menendez',
+      logo: '/images/site/Logo_Alonso-Menendez.jpg',
+      category: 'charutos',
+      tagline: 'Tradição e sabor inigualável em charutos'
     },
     {
-      id: '3',
-      name: 'Smoking',
-      logoText: 'SMOKING',
-      tagline: 'Liderança global em papéis para cigarro.',
-      features: [
-        'Origem espanhola com mais de um século de história e inovação',
-        'Combustão lenta certificada e goma arábica 100% natural',
-        'Compromisso ecológico com papéis de reflorestamento controlado',
-        'Variedade completa de espessuras, larguras e materiais (arroz, cânhamo)'
-      ],
-      products: [
-        'Smoking Deluxe King Size (Papel ultrafino)',
-        'Smoking Brown King Size (Papel não branqueado)',
-        'Smoking Master (Combustão extra lenta)',
-        'Smoking Organic (Papel de cânhamo 100% orgânico)'
-      ]
+      id: 'gran-caboclo',
+      name: 'Gran Caboclo',
+      logo: '/images/site/Gran-Caboclo-300x231.jpg',
+      category: 'charutos',
+      tagline: 'Charutos nacionais de excelência'
     },
     {
-      id: '4',
-      name: 'Hi Tobacco',
-      logoText: 'HI TOBACCO',
-      tagline: 'Fumo puro e sem aditivos para uma experiência natural.',
-      features: [
-        'Blend premium de folhas douradas de Virginia selecionadas',
-        'Livre de aditivos químicos, conservantes ou aromatizantes artificiais',
-        'Corte fino ideal para confecção manual',
-        'Embalagem hermética com tripla camada que mantém a umidade ideal'
-      ],
-      products: [
-        'Hi Tobacco Golden Virginia (Suave e encorpado)',
-        'Hi Tobacco Organic (Tabaco orgânico certificado)',
-        'Hi Tobacco Virginia Blend (Clássico equilibrado)'
-      ]
+      id: 'siboney',
+      name: 'Siboney',
+      logo: '/images/site/Novo-Logo-SIBONEY-Extenso-COMPLETO-5-300x150.png',
+      category: 'charutos',
+      tagline: 'Charutos cubanos de longa tradição'
+    },
+    {
+      id: 'vibe-tobacco',
+      name: 'Vibe Tobacco',
+      logo: '/images/site/Logo_vibe_tobacco-212x300.png',
+      category: 'fumo',
+      tagline: 'Fumo premium de corte fino para cigarro'
+    },
+    {
+      id: 'raw',
+      name: 'RAW Rolling Papers',
+      logo: '/images/site/Logo-Raw_Rolling_Papers.png',
+      category: 'papel',
+      tagline: 'Papéis naturais não branqueados para cigarro'
+    },
+    {
+      id: 'king-blunt',
+      name: 'King Blunt',
+      logo: '/images/site/King_Blunt_2.jpg',
+      category: 'papel',
+      tagline: 'Blunts e papéis especiais premium'
+    },
+    {
+      id: 'king-paper',
+      name: 'King Paper',
+      logo: '/images/site/King_Paper-1024x310.jpg',
+      category: 'papel',
+      tagline: 'Papéis de alta performance para cigarro'
+    },
+    {
+      id: 'clipper',
+      name: 'Clipper',
+      logo: '/images/site/Clipper-Logo-2.png',
+      category: 'acessorios',
+      tagline: 'Isqueiros e acessórios de alta durabilidade'
+    },
+    {
+      id: 'don-paiol',
+      name: 'Don Paiol',
+      logo: '/images/site/Logo_Don_Paiol_Preta-300x294.png',
+      category: 'acessorios',
+      tagline: 'Cachimbos e acessórios artesanais brasileiros'
+    },
+    {
+      id: 'sao-jorge',
+      name: 'São Jorge',
+      logo: '/images/site/Logo_Sao_Jorge-300x300.png',
+      category: 'fumo',
+      tagline: 'Fumo de qualidade com tradição nacional'
+    },
+    {
+      id: 'bem-bolado',
+      name: 'Bem Bolado',
+      logo: '/images/site/Logo_Bem_Bolado.png',
+      category: 'acessorios',
+      tagline: 'Acessórios modernos para amantes do cigarro'
+    },
+    {
+      id: 'nf',
+      name: 'NF',
+      logo: '/images/site/Logo_NF-300x167.png',
+      category: 'papel',
+      tagline: 'Papéis finos e filtros de qualidade superior'
+    },
+    {
+      id: 'talvis',
+      name: 'Talvis',
+      logo: '/images/site/Logo-Talvis.png',
+      category: 'acessorios',
+      tagline: 'Acessórios e complementos para tabaco'
+    },
+    {
+      id: 'volcano',
+      name: 'Volcano',
+      logo: '/images/site/volcano.png',
+      category: 'acessorios',
+      tagline: 'Vaporizadores e acessórios tecnológicos'
+    },
+    {
+      id: 'aleda',
+      name: 'Aleda Celulose',
+      logo: '/images/site/aLeda_Celulose-r3x0l2smvbz8ev26mo94vswltpqwhtwtdqx2046e2g.jpg',
+      category: 'papel',
+      tagline: 'Papéis de celulose natural transparente'
+    },
+    {
+      id: '4e20',
+      name: '4/20 Free Time',
+      logo: '/images/site/4e20_free_time-300x169.jpg',
+      category: 'papel',
+      tagline: 'Papéis e acessórios para consumidores modernos'
     }
   ]
 
-  const activeBrand = brands.find(b => b.id === activeBrandId) || brands[0]
+  const filters = [
+    { id: 'all', label: 'Todas as Marcas' },
+    { id: 'charutos', label: 'Charutos' },
+    { id: 'fumo', label: 'Fumo' },
+    { id: 'papel', label: 'Papéis' },
+    { id: 'acessorios', label: 'Acessórios' }
+  ]
+
+  const filteredBrands = activeFilter === 'all'
+    ? brands
+    : brands.filter(b => b.category === activeFilter)
 
   return (
     <div className="brands-page">
@@ -104,65 +160,53 @@ export default function NossasMarcasPage() {
         </div>
       </section>
 
-      {/* Interactive Tabs Section */}
-      <section className="section-padding">
+      {/* Filter Bar */}
+      <section className="filter-section section-padding">
         <div className="container">
-          <div className="brands-selector">
-            {brands.map(brand => (
+          <div className="filter-bar">
+            {filters.map(filter => (
               <button
-                key={brand.id}
-                onClick={() => {
-                  setActiveBrandId(brand.id)
-                  setActiveTab('features')
-                }}
-                className={`brand-selector-btn ${activeBrandId === brand.id ? 'active' : ''}`}
+                key={filter.id}
+                onClick={() => setActiveFilter(filter.id)}
+                className={`filter-btn ${activeFilter === filter.id ? 'active' : ''}`}
               >
-                {brand.name}
+                {filter.label}
               </button>
             ))}
           </div>
 
-          <div className="brand-display-card glass">
-            <div className="brand-header-info">
-              <div className="brand-logo-mock">{activeBrand.logoText}</div>
-              <h2 className="brand-name-title text-gold">{activeBrand.name}</h2>
-              <p className="brand-tagline">{activeBrand.tagline}</p>
-            </div>
+          {/* Brand Count */}
+          <p className="brand-count">
+            <span className="count-number">{filteredBrands.length}</span> marcas distribuídas
+          </p>
 
-            <div className="brand-tab-menu">
-              <button
-                onClick={() => setActiveTab('features')}
-                className={`brand-tab-btn ${activeTab === 'features' ? 'active' : ''}`}
-              >
-                {t('brands.tabs.features')}
-              </button>
-              <button
-                onClick={() => setActiveTab('products')}
-                className={`brand-tab-btn ${activeTab === 'products' ? 'active' : ''}`}
-              >
-                {t('brands.tabs.products')}
-              </button>
-            </div>
+          {/* Brand Logo Grid */}
+          <div className="brands-grid">
+            {filteredBrands.map(brand => (
+              <div key={brand.id} className="brand-card glass hover-lift">
+                <div className="brand-logo-wrapper">
+                  <img
+                    src={brand.logo}
+                    alt={`Logo ${brand.name}`}
+                    className="brand-logo-img"
+                  />
+                </div>
+                <div className="brand-info">
+                  <h3 className="brand-name">{brand.name}</h3>
+                  <span className="brand-category-tag">{brand.category}</span>
+                  <p className="brand-tagline">{brand.tagline}</p>
+                </div>
+              </div>
+            ))}
+          </div>
 
-            <div className="brand-tab-content">
-              {activeTab === 'features' ? (
-                <ul className="brand-list">
-                  {activeBrand.features.map((feat, idx) => (
-                    <li key={idx} className="brand-list-item">
-                      <span className="bullet">✦</span> {feat}
-                    </li>
-                  ))}
-                </ul>
-              ) : (
-                <ul className="brand-list">
-                  {activeBrand.products.map((prod, idx) => (
-                    <li key={idx} className="brand-list-item">
-                      <span className="bullet">✔</span> {prod}
-                    </li>
-                  ))}
-                </ul>
-              )}
-            </div>
+          {/* CTA Bottom */}
+          <div className="brands-cta glass">
+            <h2 className="cta-title text-gold">Distribua as melhores marcas do mercado</h2>
+            <p className="cta-desc">
+              Abra seu cadastro de revendedor e tenha acesso a todo nosso portfólio premium com as melhores condições comerciais do Rio de Janeiro.
+            </p>
+            <a href="/seja-nosso-cliente" className="btn btn-primary">Seja Nosso Cliente</a>
           </div>
         </div>
       </section>
@@ -175,7 +219,7 @@ export default function NossasMarcasPage() {
 
         .brands-hero {
           position: relative;
-          background-image: url('https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=1470&auto=format&fit=crop'); /* Fumaça/estúdio */
+          background-image: url('/images/site/King_Blunt_2.jpg');
           background-size: cover;
           background-position: center;
           height: 300px;
@@ -205,133 +249,183 @@ export default function NossasMarcasPage() {
           margin-top: 8px;
         }
 
-        .brands-selector {
-          display: flex;
-          justify-content: center;
-          gap: 16px;
-          margin-bottom: 40px;
-          flex-wrap: wrap;
+        /* Filter */
+        .filter-section {
+          padding-bottom: 80px;
         }
 
-        .brand-selector-btn {
+        .filter-bar {
+          display: flex;
+          gap: 12px;
+          flex-wrap: wrap;
+          justify-content: center;
+          margin-bottom: 16px;
+        }
+
+        .filter-btn {
           font-family: var(--font-barlow);
-          font-size: 1.1rem;
+          font-size: 0.9rem;
           font-weight: 700;
-          color: var(--foreground-muted);
-          background: var(--surface-card);
-          border: 1px solid var(--surface-border);
-          padding: 12px 28px;
+          text-transform: uppercase;
+          letter-spacing: 0.05em;
+          padding: 10px 24px;
           border-radius: var(--border-radius-full);
+          border: 1px solid var(--surface-border);
+          background: var(--surface-card);
+          color: var(--foreground-muted);
           cursor: pointer;
           transition: all var(--transition-fast);
         }
 
-        .brand-selector-btn:hover, .brand-selector-btn.active {
+        .filter-btn:hover, .filter-btn.active {
           background: var(--primary);
           color: #0a0000;
           border-color: var(--primary);
           box-shadow: 0 4px 12px rgba(255, 204, 102, 0.3);
         }
 
-        .brand-display-card {
-          max-width: 800px;
-          margin: 0 auto;
-          padding: 48px;
-          border-radius: var(--border-radius-md);
-          background: var(--surface-card);
-          border: 1px solid var(--surface-border);
+        .brand-count {
+          text-align: center;
+          font-size: 0.95rem;
+          color: var(--foreground-muted);
+          margin-bottom: 48px;
         }
 
-        @media (max-width: 544px) {
-          .brand-display-card {
-            padding: 24px;
+        .count-number {
+          font-size: 1.2rem;
+          font-weight: 700;
+          color: var(--primary-dark);
+        }
+
+        /* Brand Grid */
+        .brands-grid {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 24px;
+          margin-bottom: 64px;
+        }
+
+        @media (max-width: 1024px) {
+          .brands-grid {
+            grid-template-columns: repeat(3, 1fr);
           }
         }
 
-        .brand-header-info {
+        @media (max-width: 768px) {
+          .brands-grid {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .brands-grid {
+            grid-template-columns: repeat(2, 1fr);
+          }
+        }
+
+        /* Brand Card */
+        .brand-card {
+          background: var(--surface-card);
+          border: 1px solid var(--surface-border);
+          border-radius: var(--border-radius-md);
+          padding: 24px 20px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
           text-align: center;
-          margin-bottom: 32px;
-          border-bottom: 1px solid var(--surface-border);
-          padding-bottom: 32px;
+          transition: all var(--transition-smooth);
+          cursor: default;
         }
 
-        .brand-logo-mock {
-          font-size: 2.5rem;
-          font-weight: 800;
-          letter-spacing: 0.25em;
+        .brand-card:hover {
+          border-color: rgba(255, 204, 102, 0.4);
+          box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+        }
+
+        .brand-logo-wrapper {
+          width: 100%;
+          height: 110px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 16px;
+          background: #ffffff;
+          border-radius: var(--border-radius-sm);
+          padding: 12px;
+        }
+
+        .brand-logo-img {
+          max-width: 100%;
+          max-height: 85px;
+          width: auto;
+          height: auto;
+          object-fit: contain;
+        }
+
+        .brand-info {
+          width: 100%;
+        }
+
+        .brand-name {
+          font-size: 1rem;
+          font-weight: 700;
           color: var(--foreground);
-          margin-bottom: 12px;
+          margin-bottom: 6px;
+          letter-spacing: 0.02em;
         }
 
-        .brand-name-title {
-          font-size: 1.8rem;
-          margin-bottom: 8px;
+        .brand-category-tag {
+          display: inline-block;
+          font-size: 0.7rem;
+          font-weight: 600;
           text-transform: uppercase;
+          letter-spacing: 0.1em;
+          color: var(--primary-dark);
+          background: rgba(255, 204, 102, 0.12);
+          padding: 3px 10px;
+          border-radius: var(--border-radius-full);
+          margin-bottom: 8px;
         }
 
         .brand-tagline {
-          font-size: 1.1rem;
+          font-size: 0.82rem;
+          line-height: 1.4;
           color: var(--foreground-muted);
-          font-style: italic;
-        }
-
-        .brand-tab-menu {
-          display: flex;
-          justify-content: center;
-          gap: 24px;
-          margin-bottom: 24px;
-        }
-
-        .brand-tab-btn {
-          font-family: var(--font-barlow);
-          font-size: 0.95rem;
-          font-weight: 700;
-          text-transform: uppercase;
-          letter-spacing: 0.05em;
-          color: var(--foreground-muted);
-          background: transparent;
-          border: none;
-          padding: 8px 16px;
-          cursor: pointer;
-          position: relative;
-          transition: color var(--transition-fast);
-        }
-
-        .brand-tab-btn.active {
-          color: var(--primary-dark);
-        }
-
-        .brand-tab-btn.active::after {
-          content: '';
-          position: absolute;
-          left: 15%;
-          bottom: 0;
-          width: 70%;
-          height: 3px;
-          background-color: var(--primary);
-        }
-
-        .brand-list {
-          list-style: none;
-          padding: 0;
           margin: 0;
-          max-width: 600px;
-          margin: 0 auto;
         }
 
-        .brand-list-item {
+        /* Bottom CTA */
+        .brands-cta {
+          background: var(--surface-card);
+          border: 1px solid var(--surface-border);
+          border-radius: var(--border-radius-md);
+          padding: 48px;
+          text-align: center;
+        }
+
+        .cta-title {
+          font-size: 2rem;
+          font-weight: 700;
+          margin-bottom: 16px;
+        }
+
+        .cta-desc {
           font-size: 1.05rem;
-          line-height: 1.7;
+          line-height: 1.6;
           color: var(--foreground-muted);
-          margin-bottom: 12px;
-          display: flex;
-          align-items: flex-start;
-          gap: 12px;
+          max-width: 600px;
+          margin: 0 auto 32px;
         }
 
-        .bullet {
-          color: var(--primary-dark);
-          font-weight: bold;
+        @media (max-width: 544px) {
+          .brands-cta {
+            padding: 32px 20px;
+          }
+
+          .cta-title {
+            font-size: 1.5rem;
+          }
         }
       `}</style>
     </div>

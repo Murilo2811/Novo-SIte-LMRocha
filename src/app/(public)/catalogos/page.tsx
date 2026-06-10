@@ -171,7 +171,7 @@ export default function CatalogosPage() {
 
         .catalog-hero {
           position: relative;
-          background-image: url('https://images.unsplash.com/photo-1550989460-0adf9ea622e2?q=80&w=1470&auto=format&fit=crop'); /* Fumaça preta/estúdio */
+          background-image: url('/images/site/WhatsApp-Image-2020-07-14-at-23.09.03.jpeg'); /* Foto real do acervo */
           background-size: cover;
           background-position: center;
           height: 300px;

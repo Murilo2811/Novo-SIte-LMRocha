@@ -82,7 +82,7 @@ export default function ContatoPage() {
 
         .contact-hero {
           position: relative;
-          background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1470&auto=format&fit=crop'); /* Escritório */
+          background-image: url('/images/site/WhatsApp-Image-2020-07-14-at-23.09.02.jpeg'); /* Foto real do acervo */
           background-size: cover;
           background-position: center;
           height: 300px;

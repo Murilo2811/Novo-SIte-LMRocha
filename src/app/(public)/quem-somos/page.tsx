@@ -71,7 +71,7 @@ export default function QuemSomosPage() {
 
         .about-hero {
           position: relative;
-          background-image: url('https://images.unsplash.com/photo-1543087903-1ac2ec7aa8c5?q=80&w=1470&auto=format&fit=crop'); /* Charuto premium */
+          background-image: url('/images/site/WhatsApp-Image-2020-07-22-at-10.14.53-2.jpeg'); /* Foto real do acervo */
           background-size: cover;
           background-position: center;
           height: 300px;
