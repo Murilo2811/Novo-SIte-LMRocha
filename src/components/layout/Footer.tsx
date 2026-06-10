@@ -13,8 +13,7 @@ export const Footer: React.FC = () => {
         {/* Col 1: Brand Info */}
         <div className="footer-col brand-col">
           <div className="footer-logo">
-            <span className="logo-main">LM ROCHA</span>
-            <span className="logo-sub">DISTRIBUIDORA</span>
+            <img src="/images/logo.png" alt="LM Rocha Logo" className="footer-logo-image" />
           </div>
           <p className="footer-about-text">{t('footer.aboutText')}</p>
         </div>
@@ -95,24 +94,15 @@ export const Footer: React.FC = () => {
 
         .footer-logo {
           display: flex;
-          flex-direction: column;
           line-height: 1;
           margin-bottom: 20px;
         }
 
-        .logo-main {
-          font-size: 1.8rem;
-          font-weight: 700;
-          letter-spacing: 0.05em;
-          color: #0c0a09;
-        }
-
-        .logo-sub {
-          font-size: 0.7rem;
-          font-weight: 600;
-          letter-spacing: 0.3em;
-          color: rgba(12, 10, 9, 0.7);
-          margin-top: 2px;
+        .footer-logo-image {
+          height: 48px;
+          width: auto;
+          object-fit: contain;
+          filter: drop-shadow(0px 1px 1px rgba(0,0,0,0.15));
         }
 
         .footer-about-text {

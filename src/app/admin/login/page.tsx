@@ -13,7 +13,7 @@ export default function AdminLoginPage() {
     <div className="login-page">
       <div className="login-card glass">
         <div className="logo-wrapper">
-          <div className="logo-text">LM ROCHA</div>
+          <img src="/images/logo.png" alt="LM Rocha Logo" className="logo-image" />
           <div className="logo-subtext">PAINEL ADMIN</div>
         </div>
 
@@ -61,14 +61,15 @@ export default function AdminLoginPage() {
 
         .logo-wrapper {
           margin-bottom: 24px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
         }
 
-        .logo-text {
-          font-size: 2rem;
-          font-weight: 700;
-          letter-spacing: 0.05em;
-          color: var(--primary);
-          line-height: 1;
+        .logo-image {
+          height: 60px;
+          width: auto;
+          object-fit: contain;
         }
 
         .logo-subtext {
@@ -76,7 +77,7 @@ export default function AdminLoginPage() {
           font-weight: 600;
           letter-spacing: 0.25em;
           color: #ffffff;
-          margin-top: 4px;
+          margin-top: 8px;
         }
 
         .login-title {

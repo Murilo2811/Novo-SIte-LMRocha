@@ -35,9 +35,7 @@ export const AgeGate: React.FC = () => {
     <div className="age-gate-overlay">
       <div className="age-gate-container glass">
         <div className="logo-wrapper">
-          {/* Logo LM Rocha de fallback */}
-          <div className="logo-text">LM ROCHA</div>
-          <div className="logo-subtext">DISTRIBUIDORA</div>
+          <img src="/images/logo.png" alt="LM Rocha Logo" className="logo-image" />
         </div>
         
         <h2 className="age-gate-title">{t('ageGate.title')}</h2>
@@ -85,22 +83,14 @@ export const AgeGate: React.FC = () => {
 
         .logo-wrapper {
           margin-bottom: 24px;
+          display: flex;
+          justify-content: center;
         }
 
-        .logo-text {
-          font-size: 2.2rem;
-          font-weight: 700;
-          letter-spacing: 0.1em;
-          color: var(--primary);
-          line-height: 1;
-        }
-
-        .logo-subtext {
-          font-size: 0.8rem;
-          font-weight: 600;
-          letter-spacing: 0.3em;
-          color: #ffffff;
-          margin-top: 4px;
+        .logo-image {
+          height: 70px;
+          width: auto;
+          object-fit: contain;
         }
 
         .age-gate-title {

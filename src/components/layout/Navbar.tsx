@@ -58,8 +58,7 @@ export const Navbar: React.FC = () => {
       <div className="container navbar-container">
         {/* Logo */}
         <Link href="/" className="logo-link">
-          <div className="logo-text">LM ROCHA</div>
-          <div className="logo-sub">DISTRIBUIDORA</div>
+          <img src="/images/logo.png" alt="LM Rocha Logo" className="logo-image" />
         </Link>
 
         {/* Desktop Links */}
@@ -168,23 +167,18 @@ export const Navbar: React.FC = () => {
 
         .logo-link {
           display: flex;
-          flex-direction: column;
-          line-height: 1;
+          align-items: center;
         }
 
-        .logo-text {
-          font-size: 1.6rem;
-          font-weight: 700;
-          letter-spacing: 0.05em;
-          color: var(--primary);
+        .logo-image {
+          height: 48px;
+          width: auto;
+          object-fit: contain;
+          transition: height var(--transition-smooth);
         }
 
-        .logo-sub {
-          font-size: 0.6rem;
-          font-weight: 600;
-          letter-spacing: 0.35em;
-          color: #ffffff;
-          margin-top: 2px;
+        .navbar.scrolled .logo-image {
+          height: 40px;
         }
 
         .nav-links {
