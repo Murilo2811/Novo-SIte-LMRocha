@@ -326,6 +326,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #f0ece4 !important;
   display: flex !important;
   align-items: center !important;
+  justify-content: center !important;
   gap: 10px !important;
   padding: 11px 20px !important;
   font-size: 0.9rem !important;
@@ -333,6 +334,7 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0.02em !important;
   white-space: nowrap !important;
   text-decoration: none !important;
+  text-align: center !important;
   transition: background 0.15s ease, color 0.15s ease !important;
 }
 
