@@ -10,6 +10,7 @@ interface Product {
   brand: string
   description: string
   price: number
+  image?: string
   features: Record<string, string>
 }
 
@@ -124,6 +125,21 @@ export default function CatalogosPage() {
             <div className="grid grid-cols-3 gap-3 products-grid">
               {products.map(prod => (
                 <div key={prod.id} className="product-card hover-lift glass">
+                  {/* Imagem do produto */}
+                  <div className="product-image-wrapper">
+                    {prod.image ? (
+                      <img
+                        src={prod.image}
+                        alt={prod.name}
+                        className="product-image"
+                      />
+                    ) : (
+                      <div className="product-image-placeholder">
+                        <span>{prod.brand.charAt(0)}</span>
+                      </div>
+                    )}
+                  </div>
+
                   <div className="product-info-top">
                     <span className="product-brand">{prod.brand}</span>
                     <span className="product-category-label">{prod.category}</span>
@@ -304,10 +320,66 @@ export default function CatalogosPage() {
           background-color: var(--surface-card);
           border: 1px solid var(--surface-border);
           border-radius: var(--border-radius-md);
-          padding: 32px;
+          padding: 0 0 24px 0;
           display: flex;
           flex-direction: column;
           height: 100%;
+          overflow: hidden;
+        }
+
+        /* Imagem */
+        .product-image-wrapper {
+          width: 100%;
+          height: 160px;
+          background: #ffffff;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 20px;
+          border-bottom: 1px solid var(--surface-border);
+          flex-shrink: 0;
+        }
+
+        .product-image {
+          max-width: 100%;
+          max-height: 120px;
+          width: auto;
+          height: auto;
+          object-fit: contain;
+        }
+
+        .product-image-placeholder {
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
+          background: rgba(255, 204, 102, 0.15);
+          border: 2px solid rgba(255, 204, 102, 0.3);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 2rem;
+          font-weight: 800;
+          color: var(--primary);
+        }
+
+        .product-info-top {
+          padding: 20px 24px 0;
+        }
+
+        .product-name {
+          padding: 0 24px;
+        }
+
+        .product-desc {
+          padding: 0 24px;
+        }
+
+        .product-specs {
+          padding: 16px 24px 0;
+        }
+
+        .product-footer {
+          padding: 20px 24px 0;
         }
 
         .product-info-top {

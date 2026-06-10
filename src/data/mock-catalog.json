@@ -1,42 +1,102 @@
 [
   {
     "id": "1",
-    "name": "Charuto Cohiba Robusto",
+    "name": "Gran Honduras Robusto",
     "category": "charutos",
-    "brand": "Cohiba",
-    "description": "Um dos charutos mais prestigiados do mundo, com fortaleza média a forte e sabores complexos de madeira e especiarias.",
-    "price": 350.00,
-    "image": "/images/products/cohiba-robusto.jpg",
+    "brand": "Gran Honduras",
+    "description": "Charuto hondurenho premium de fortaleza média, com notas de madeira, mel e especiarias. Ideal para apreciadores exigentes.",
+    "price": 38.00,
+    "image": "/images/site/Logo-Gran-Honduras-10-09-2018-269x300.png",
     "features": {
-      "origem": "Cuba",
-      "bitola": "124mm x 19.8mm (Anel 50)",
+      "origem": "Honduras",
+      "bitola": "127mm x 19.8mm (Anel 50)",
       "tempo_degustacao": "45-60 min",
-      "fortaleza": "Forte"
+      "fortaleza": "Média"
     }
   },
   {
     "id": "2",
-    "name": "Charuto Montecristo No. 4",
+    "name": "Gran Honduras Seconds",
     "category": "charutos",
-    "brand": "Montecristo",
-    "description": "O charuto cubano mais vendido do planeta. Sabor clássico terroso com notas de cacau e café torrado.",
-    "price": 140.00,
-    "image": "/images/products/montecristo-no4.jpg",
+    "brand": "Gran Honduras",
+    "description": "Versão acessível da linha Gran Honduras, mantendo a qualidade da folha e o sabor equilibrado da blenda original.",
+    "price": 22.00,
+    "image": "/images/site/Gran_Honduras_Seconds-300x119.png",
     "features": {
-      "origem": "Cuba",
-      "bitola": "129mm x 16.7mm (Anel 42)",
-      "tempo_degustacao": "30-40 min",
-      "fortaleza": "Média a Forte"
+      "origem": "Honduras",
+      "bitola": "120mm x 17.5mm (Anel 44)",
+      "tempo_degustacao": "30-45 min",
+      "fortaleza": "Leve a Média"
     }
   },
   {
     "id": "3",
-    "name": "Fumo Vibe Tobacco Virginia Blend",
+    "name": "Gran Honduras Short Filler",
+    "category": "charutos",
+    "brand": "Gran Honduras",
+    "description": "Charuto de tripa curta com capa natural. Praticidade e sabor Gran Honduras num formato mais curto e rápido.",
+    "price": 15.00,
+    "image": "/images/site/Gran_Honduras_SHORT_FILLER-300x120.png",
+    "features": {
+      "origem": "Honduras",
+      "bitola": "100mm x 16.7mm (Anel 42)",
+      "tempo_degustacao": "20-30 min",
+      "fortaleza": "Leve"
+    }
+  },
+  {
+    "id": "4",
+    "name": "Alonso Menendez Clássico",
+    "category": "charutos",
+    "brand": "Alonso Menendez",
+    "description": "Charuto de sabor inigualável com blend equilibrado entre folhas de capa clara e tripa encorpada. Tradição e elegância.",
+    "price": 28.00,
+    "image": "/images/site/Logo_Alonso-Menendez.jpg",
+    "features": {
+      "origem": "Brasil",
+      "bitola": "120mm x 18mm (Anel 46)",
+      "tempo_degustacao": "35-50 min",
+      "fortaleza": "Média"
+    }
+  },
+  {
+    "id": "5",
+    "name": "Gran Caboclo Natural",
+    "category": "charutos",
+    "brand": "Gran Caboclo",
+    "description": "Charuto nacional de excelência, produzido com folhas do Recôncavo Baiano. Sabor terroso, amadeirado e levemente adocicado.",
+    "price": 18.00,
+    "image": "/images/site/Gran-Caboclo-300x231.jpg",
+    "features": {
+      "origem": "Brasil (Bahia)",
+      "bitola": "115mm x 17.5mm (Anel 44)",
+      "tempo_degustacao": "30-40 min",
+      "fortaleza": "Leve a Média"
+    }
+  },
+  {
+    "id": "6",
+    "name": "Siboney Tradicional",
+    "category": "charutos",
+    "brand": "Siboney",
+    "description": "Charuto de longa tradição com capa cubana. Sabor complexo com notas de café, cacau e especiarias finas.",
+    "price": 32.00,
+    "image": "/images/site/Novo-Logo-SIBONEY-Extenso-COMPLETO-5-300x150.png",
+    "features": {
+      "origem": "Cuba / Brasil",
+      "bitola": "125mm x 19.8mm (Anel 50)",
+      "tempo_degustacao": "40-55 min",
+      "fortaleza": "Média a Forte"
+    }
+  },
+  {
+    "id": "7",
+    "name": "Vibe Tobacco Virginia Blend",
     "category": "fumo",
     "brand": "Vibe Tobacco",
-    "description": "Blend de tabacos Virginia selecionados, de sabor suave e aroma adocicado natural. Ideal para enrolar.",
+    "description": "Blend de tabacos Virginia selecionados, sabor suave e aroma adocicado natural. Corte fino ideal para enrolar.",
     "price": 25.00,
-    "image": "/images/products/fumo-vibe-virginia.jpg",
+    "image": "/images/site/Logo_vibe_tobacco-212x300.png",
     "features": {
       "tipo": "Virginia Blend",
       "peso": "25g",
@@ -45,108 +105,183 @@
     }
   },
   {
-    "id": "4",
-    "name": "Fumo Hi Tobacco Golden Virginia",
+    "id": "8",
+    "name": "São Jorge Tradicional",
     "category": "fumo",
-    "brand": "Hi Tobacco",
-    "description": "Tabaco 100% livre de aditivos químicos, composto puramente por folhas claras de Virginia cuidadosamente desfiadas.",
-    "price": 32.00,
-    "image": "/images/products/hi-tobacco-golden.jpg",
+    "brand": "São Jorge",
+    "description": "Fumo de corte médio com blend clássico brasileiro. Qualidade e tradição para o consumidor nacional.",
+    "price": 18.00,
+    "image": "/images/site/Logo_Sao_Jorge-300x300.png",
     "features": {
-      "tipo": "Virginia Gold",
-      "peso": "35g",
-      "intensidade": "Média-Suave",
+      "tipo": "Blend Nacional",
+      "peso": "30g",
+      "intensidade": "Média",
       "origem": "Brasil"
     }
   },
   {
-    "id": "5",
-    "name": "Seda Smoking Deluxe King Size",
+    "id": "9",
+    "name": "RAW Classic King Size",
     "category": "papel",
-    "brand": "Smoking",
-    "description": "Papel ultrafino de combustão lenta. Produzido com goma arábica 100% natural, sem corantes.",
-    "price": 7.50,
-    "image": "/images/products/smoking-deluxe.jpg",
+    "brand": "RAW Rolling Papers",
+    "description": "Papel não branqueado de combustão lenta com goma arábica natural. Referência mundial em papéis para cigarro.",
+    "price": 9.00,
+    "image": "/images/site/Logo-Raw_Rolling_Papers.png",
     "features": {
       "tamanho": "110mm x 44mm (King Size)",
-      "folhas": "33 folhas por livreto",
+      "folhas": "32 folhas por livreto",
       "gramatura": "13 g/m²",
-      "material": "Arroz"
-    }
-  },
-  {
-    "id": "6",
-    "name": "Seda OCB Organic Hemp Single Wide",
-    "category": "papel",
-    "brand": "OCB",
-    "description": "Papel ecológico produzido a partir de cânhamo orgânico certificado, não branqueado.",
-    "price": 6.00,
-    "image": "/images/products/ocb-organic.jpg",
-    "features": {
-      "tamanho": "69mm x 36mm",
-      "folhas": "50 folhas por livreto",
-      "gramatura": "12 g/m²",
-      "material": "Cânhamo Orgânico"
-    }
-  },
-  {
-    "id": "7",
-    "name": "Filtros Gizeh Slim Charcoal 6mm",
-    "category": "filtros",
-    "brand": "Gizeh",
-    "description": "Filtros de acetato com carvão ativado que auxiliam na redução de impurezas sem alterar o sabor.",
-    "price": 12.00,
-    "image": "/images/products/gizeh-charcoal.jpg",
-    "features": {
-      "diametro": "6mm (Slim)",
-      "quantidade": "120 filtros por pacote",
-      "material": "Acetato + Carvão Ativado",
-      "fechamento": "Saco com zip de proteção"
-    }
-  },
-  {
-    "id": "8",
-    "name": "Filtros OCB Slim 6mm Biodegradáveis",
-    "category": "filtros",
-    "brand": "OCB",
-    "description": "Filtros biodegradáveis feitos de celulose pura não branqueada. Amigos do meio ambiente.",
-    "price": 10.00,
-    "image": "/images/products/ocb-filters-bio.jpg",
-    "features": {
-      "diametro": "6mm (Slim)",
-      "quantidade": "150 filtros por pacote",
-      "material": "Celulose não branqueada",
-      "caracteristica": "100% Biodegradável"
-    }
-  },
-  {
-    "id": "9",
-    "name": "Isqueiro Clipper Metal Gold recarregável",
-    "category": "acessorios",
-    "brand": "Clipper",
-    "description": "Edição premium Clipper em metal dourado com ajuste de chama. Acompanha estojo metálico exclusivo.",
-    "price": 85.00,
-    "image": "/images/products/clipper-metal-gold.jpg",
-    "features": {
-      "material": "Metal",
-      "cor": "Dourado / Ouro",
-      "recarregavel": "Sim (Gás Butano)",
-      "pedra_substituivel": "Sim"
+      "material": "Cânhamo não branqueado"
     }
   },
   {
     "id": "10",
-    "name": "Cortador de Charutos Vertigo Double Blade",
-    "category": "acessorios",
-    "brand": "Vertigo",
-    "description": "Cortador de guilhotina dupla com lâminas de aço inoxidável cirúrgico autolimpantes. Corte limpo e preciso.",
-    "price": 60.00,
-    "image": "/images/products/vertigo-cutter.jpg",
+    "name": "King Blunt Natural",
+    "category": "papel",
+    "brand": "King Blunt",
+    "description": "Blunt wrap de alta qualidade com sabor neutro, combustão lenta e selagem fácil. Premium para consumidores exigentes.",
+    "price": 12.00,
+    "image": "/images/site/King_Blunt_2.jpg",
     "features": {
-      "material": "Plástico ABS + Aço Inoxidável",
-      "corte_maximo": "Anel 54",
-      "mecanismo": "Dupla Lâmina",
-      "garantia": "Vitalícia pelo fabricante"
+      "tamanho": "King Size",
+      "folhas": "25 por caixa",
+      "material": "Tabaco Natural",
+      "caracteristica": "Slow Burn"
+    }
+  },
+  {
+    "id": "11",
+    "name": "King Paper Ultra Thin",
+    "category": "papel",
+    "brand": "King Paper",
+    "description": "Papel ultrafino de alta performance para cigarro. Combustão uniforme sem interferir no sabor do tabaco.",
+    "price": 7.50,
+    "image": "/images/site/King_Paper-1024x310.jpg",
+    "features": {
+      "tamanho": "110mm King Size",
+      "folhas": "33 por livreto",
+      "gramatura": "12 g/m²",
+      "material": "Arroz"
+    }
+  },
+  {
+    "id": "12",
+    "name": "NF Slim Filter Tips",
+    "category": "papel",
+    "brand": "NF",
+    "description": "Filtros e papéis finos de qualidade superior. Redução de impurezas e experiência de fumo mais suave.",
+    "price": 8.00,
+    "image": "/images/site/Logo_NF-300x167.png",
+    "features": {
+      "tipo": "Slim",
+      "diametro": "6mm",
+      "quantidade": "120 por pacote",
+      "material": "Celulose"
+    }
+  },
+  {
+    "id": "13",
+    "name": "aLeda Celulose Transparente",
+    "category": "papel",
+    "brand": "aLeda Celulose",
+    "description": "Papel de celulose natural 100% transparente, origem brasileira. Não altera sabor e queima de forma limpa.",
+    "price": 11.00,
+    "image": "/images/site/aLeda_Celulose-r3x0l2smvbz8ev26mo94vswltpqwhtwtdqx2046e2g.jpg",
+    "features": {
+      "tamanho": "King Size",
+      "folhas": "33 por livreto",
+      "material": "Celulose Vegetal",
+      "origem": "Brasil"
+    }
+  },
+  {
+    "id": "14",
+    "name": "4/20 Free Time Kit",
+    "category": "papel",
+    "brand": "4/20 Free Time",
+    "description": "Kit completo com papéis e acessórios para consumidores modernos. Design jovem e materiais de qualidade.",
+    "price": 14.00,
+    "image": "/images/site/4e20_free_time-300x169.jpg",
+    "features": {
+      "conteudo": "Papéis + Tips",
+      "tamanho": "King Size",
+      "folhas": "32 por livreto",
+      "publico": "Adulto moderno"
+    }
+  },
+  {
+    "id": "15",
+    "name": "Clipper Recarregável Classic",
+    "category": "acessorios",
+    "brand": "Clipper",
+    "description": "Isqueiro recarregável com pedra substituível. Referência mundial em durabilidade e praticidade.",
+    "price": 22.00,
+    "image": "/images/site/Clipper-Logo-2.png",
+    "features": {
+      "material": "Plástico ABS",
+      "recarregavel": "Sim (Gás Butano)",
+      "pedra_substituivel": "Sim",
+      "garantia": "Vitalícia"
+    }
+  },
+  {
+    "id": "16",
+    "name": "Don Paiol Cachimbo Artesanal",
+    "category": "acessorios",
+    "brand": "Don Paiol",
+    "description": "Cachimbo artesanal brasileiro produzido com madeiras nobres selecionadas. Peça única para colecionadores.",
+    "price": 95.00,
+    "image": "/images/site/Logo_Don_Paiol_Preta-300x294.png",
+    "features": {
+      "material": "Madeira Nobre",
+      "origem": "Brasil",
+      "tipo": "Artesanal",
+      "acabamento": "Polido Natural"
+    }
+  },
+  {
+    "id": "17",
+    "name": "Bem Bolado Grinder 4 Partes",
+    "category": "acessorios",
+    "brand": "Bem Bolado",
+    "description": "Triturador de 4 compartimentos com tela de separação e coletor. Alumínio anodizado de alta resistência.",
+    "price": 48.00,
+    "image": "/images/site/Logo_Bem_Bolado.png",
+    "features": {
+      "material": "Alumínio Anodizado",
+      "partes": "4 compartimentos",
+      "diametro": "50mm",
+      "dentes": "32 dentes afiados"
+    }
+  },
+  {
+    "id": "18",
+    "name": "Talvis Estojo Premium",
+    "category": "acessorios",
+    "brand": "Talvis",
+    "description": "Estojo premium para charutos com sistema de umidificação integrado. Mantém até 3 charutos em perfeito estado.",
+    "price": 65.00,
+    "image": "/images/site/Logo-Talvis.png",
+    "features": {
+      "capacidade": "3 charutos",
+      "material": "Couro sintético",
+      "umidificador": "Incluído",
+      "fechamento": "Magnético"
+    }
+  },
+  {
+    "id": "19",
+    "name": "Volcano Gás Butano Premium",
+    "category": "acessorios",
+    "brand": "Volcano",
+    "description": "Gás butano de alta pureza para recarga de isqueiros. Compatível com todas as marcas do mercado.",
+    "price": 16.00,
+    "image": "/images/site/volcano.png",
+    "features": {
+      "volume": "300ml",
+      "pureza": "99,99%",
+      "pressao": "Alta Pressão",
+      "compatibilidade": "Universal"
     }
   }
 ]
